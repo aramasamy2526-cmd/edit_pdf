@@ -1,4 +1,5 @@
 🎯 Why This Project?
+
 Every day, job seekers, students, and working professionals need to add text to a PDF — filling out forms, adding signatures, updating resumes — and they get hit with a paywall.
 Adobe Acrobat → ₹1,500/month
 Smallpdf → ₹1,200/month
