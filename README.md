@@ -1,54 +1,116 @@
-# PDF Editor
+🎯 Why This Project?
+Every day, job seekers, students, and working professionals need to add text to a PDF — filling out forms, adding signatures, updating resumes — and they get hit with a paywall.
+Adobe Acrobat → ₹1,500/month
+Smallpdf → ₹1,200/month
+ilovepdf Pro → ₹800/month
+This app is 100% free, runs on your own computer, and your files never leave your machine. 🔒
 
-A FastAPI-based PDF editor application for uploading, annotating, and modifying PDF files.
+✨ Features
+FeatureStatus📤 Upload any PDF✅ Done✏️ Click to add text anywhere on the page✅ Done🖱️ Drag & drop text to reposition✅ Done✏️ Double-click to edit existing text✅ Done🖊️ Highlight areas with color✅ Done🔄 Rotate pages✅ Done🔒 Password protect your PDF✅ Done💾 Download the final edited PDF✅ Done🗑️ Remove annotations✅ Done📝 Draw shapes & freehand🔜 Coming Soon🖼️ Insert images into PDF🔜 Coming Soon✍️ Digital signature support🔜 Coming Soon📋 Form filling🔜 Coming Soon
 
-## Features
+🖥️ Demo
+Upload PDF → Click anywhere → Type your text → Download ✓
 
-- Upload PDF files
-- Add text annotations
-- Add highlight annotations
-- Edit and update annotations
-- Download modified PDFs
+Screenshot / GIF coming soon!
 
-## Installation
 
-1. Clone the repository
-```bash
-git clone https://github.com/aramasamy2526-cmd/edit_pdf.git
+🚀 Quick Start
+1. Clone the repo
+bashgit clone https://github.com/aramasamy2526-cmd/edit_pdf.git
 cd edit_pdf
-```
-
 2. Create virtual environment
-```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
-```
+bashpython -m venv venv
 
+# Windows
+venv\Scripts\activate
+
+# Mac / Linux
+source venv/bin/activate
 3. Install dependencies
-```bash
-pip install -r requirements.txt
-```
+bashpip install -r requirements.txt
+4. Run the app
+bashpython app.py
+5. Open in browser
+http://127.0.0.1:8000
+That's it! 🎉
 
-## Usage
+📁 Project Structure
+edit_pdf/
+├── app.py                  # FastAPI backend
+├── requirements.txt        # Python dependencies
+├── templates/
+│   └── index.html          # Frontend UI
+├── uploads/                # Temporary uploaded PDFs (auto-created)
+├── outputs/                # Exported PDFs (auto-created)
+└── README.md
 
-Run the application:
-```bash
-uvicorn app:app --reload
-```
+🛠️ Tech Stack
+LayerTechnologyBackendFastAPIPDF ProcessingpypdfPDF RenderingPDF.jsText OverlayReportLabFrontendHTML · CSS · Vanilla JavaScript
 
-Then open http://localhost:8000 in your browser.
+📖 How to Use
+✏️ Adding Text
 
-## Technologies
+Upload your PDF using the upload zone
+Make sure Text mode is selected (default)
+Click anywhere on the PDF page — a text cursor appears
+Type your text and press Enter
+Your text is placed exactly where you clicked
 
-- FastAPI
-- PyPDF
-- ReportLab
-- HTMLx
+🖱️ Moving Text
 
-## Author
+Switch to Select mode (↖ button in toolbar)
+Click and drag any text to reposition it
 
-aramasamy2526-cmd
-=======
-# edit_pdf
-FastAPI-based PDF editor application for uploading, annotating, and modifying PDF files
->>>>>>> a158c2cf39a1da899b2642e6b61a1248439fbf7c
+✏️ Editing Text
+
+Double-click any existing text to edit it inline
+
+🖊️ Highlighting
+
+Switch to Highlight mode
+Click and drag over any area to highlight it
+Choose your highlight color from the sidebar
+
+💾 Downloading
+
+Optionally set a password in the sidebar
+Click Download PDF
+Your edited PDF saves to your Downloads folder
+
+
+⚙️ API Endpoints
+MethodEndpointDescriptionPOST/uploadUpload a PDF filePOST/add_textAdd a text annotationPOST/add_highlightAdd a highlight boxPOST/update_annotationMove or edit an annotationPOST/remove_annotationDelete an annotationPOST/rotate_pageRotate a pagePOST/exportExport final PDFGET/get_annotationsGet all annotations
+Full interactive API docs available at: http://127.0.0.1:8000/docs
+
+🤝 Contributing
+Contributions are welcome! If you want to add a feature or fix a bug:
+
+Fork the repo
+Create a new branch: git checkout -b feature/your-feature-name
+Make your changes
+Push and open a Pull Request
+
+
+🔜 Roadmap
+
+ Freehand drawing / pen tool
+ Insert images into PDF pages
+ Digital signature pad
+ PDF form filling
+ Multi-file merge (combine PDFs)
+ Dark/light theme toggle
+ Mobile-friendly UI
+
+
+📜 License
+This project is licensed under the MIT License — free to use, modify, and distribute.
+
+👨‍💻 Author
+Aravind Ramasamy
+🔗 GitHub
+
+⭐ Support
+If this project helped you, please consider giving it a star ⭐
+It helps others find this tool and motivates continued development!
+
+💬 "Built for job seekers, students, and professionals who just need to edit a PDF — for free."
